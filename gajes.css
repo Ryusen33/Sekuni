@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&display=swap');
+
+.dj-ficha{
+  --dj-fondo:#cdbfe6;      /* tatami: fondo general */
+  --dj-panel:#e7def5;      /* papel de shoji: paneles */
+  --dj-campo:#f4effb;      /* campos a rellenar */
+  --dj-tinta:#2b1646;      /* texto y marcos */
+  --dj-viol:#4a2a7a;       /* cabeceras */
+  --dj-medio:#7a56b0;      /* detalles */
+  --dj-suave:#a98fd2;      /* líneas suaves */
+  max-width:760px; margin:0 auto; padding:14px;
+  background:var(--dj-fondo); color:var(--dj-tinta);
+  border:3px solid var(--dj-tinta); outline:2px solid var(--dj-medio); outline-offset:-9px;
+  font-family:'Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',Georgia,serif;
+  font-size:14px; line-height:1.55; box-sizing:border-box; text-align:left;
+}
+.dj-ficha *{box-sizing:border-box}
+
+/* Portada */
+.dj-portada{
+  text-align:center; padding:20px 10px 16px; margin-bottom:14px;
+  background:var(--dj-viol); color:#efe7fb; border:2px solid var(--dj-tinta);
+  background-image:repeating-linear-gradient(90deg,transparent 0,transparent 58px,rgba(255,255,255,.07) 58px,rgba(255,255,255,.07) 60px);
+}
+.dj-portada .dj-kanji{display:block; font-size:34px; font-weight:800; letter-spacing:.35em; padding-left:.35em}
+.dj-portada .dj-titulo{display:block; font-size:15px; letter-spacing:.18em; margin-top:2px}
+
+/* Secciones */
+.dj-seccion{background:var(--dj-panel); border:2px solid var(--dj-tinta); margin-bottom:14px}
+.dj-cab{display:flex; align-items:stretch; background:var(--dj-viol); color:#efe7fb; border-bottom:2px solid var(--dj-tinta)}
+.dj-sello{
+  flex:0 0 auto; min-width:44px; padding:6px 8px; text-align:center;
+  background:var(--dj-medio); color:#fff; font-size:20px; font-weight:800; border-right:2px solid var(--dj-tinta);
+}
+.dj-cab h3{margin:0; padding:8px 12px; font-size:16px; font-weight:700; letter-spacing:.08em; color:#efe7fb; background:none; border:0}
+.dj-cuerpo{padding:12px}
+
+/* Rejillas */
+.dj-grid{display:grid; gap:10px}
+.dj-g2{grid-template-columns:1fr 1fr}
+.dj-g3{grid-template-columns:1fr 1fr 1fr}
+.dj-g1{grid-template-columns:1fr}
+
+/* Campos */
+.dj-campo{background:var(--dj-campo); border:1px solid var(--dj-suave); border-left:4px solid var(--dj-medio); padding:6px 10px; min-height:52px}
+.dj-et{display:block; font-size:12px; font-weight:700; color:var(--dj-viol); letter-spacing:.06em; margin-bottom:2px}
+.dj-val{display:block; min-height:20px; border-bottom:1px dashed var(--dj-suave); color:var(--dj-tinta)}
+.dj-desc{display:block; min-height:44px; margin-top:2px; font-size:13px}
+
+/* Elementos de lista (armas, habilidades, técnicas) */
+.dj-item{background:var(--dj-campo); border:1px solid var(--dj-suave); padding:8px 10px}
+.dj-item + .dj-item{margin-top:8px}
+.dj-item .dj-nombre{display:block; font-weight:700; color:var(--dj-viol); border-bottom:1px solid var(--dj-suave); padding-bottom:2px; margin-bottom:4px}
+
+/* Hakis */
+.dj-haki{border:2px solid var(--dj-viol); background:var(--dj-campo); margin-bottom:10px}
+.dj-haki-nombre{background:var(--dj-medio); color:#fff; padding:5px 12px; font-weight:700; letter-spacing:.06em; border-bottom:2px solid var(--dj-viol)}
+.dj-haki-nombre .dj-val{border-bottom:1px dashed #d9c9f3; color:#fff}
+.dj-haki-cuerpo{padding:8px 10px}
+.dj-sub{margin:0 0 8px 14px; padding:6px 10px; border-left:4px solid var(--dj-suave); background:var(--dj-panel)}
+.dj-sub:last-child{margin-bottom:0}
+
+/* Contadores */
+.dj-cont-global{
+  display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;
+  background:var(--dj-viol); color:#efe7fb; border:2px solid var(--dj-tinta); padding:10px 14px; margin-bottom:10px;
+}
+.dj-cont-global .dj-et{color:#efe7fb; font-size:14px; margin:0}
+.dj-num{
+  display:inline-block; min-width:46px; padding:2px 8px; text-align:center; font-weight:800; font-size:18px;
+  background:var(--dj-campo); color:var(--dj-tinta); border:2px solid var(--dj-tinta);
+}
+.dj-sep{display:inline-block; padding:0 6px; font-weight:800; font-size:18px}
+.dj-mini{text-align:center; padding:8px; background:var(--dj-campo); border:1px solid var(--dj-suave); border-top:4px solid var(--dj-medio)}
+.dj-mini .dj-num{font-size:16px; min-width:38px}
+
+/* Apartados de técnicas */
+.dj-tec-cab{display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap;
+  background:var(--dj-medio); color:#fff; padding:6px 12px; border-bottom:2px solid var(--dj-tinta)}
+.dj-tec-cab strong{font-size:15px; letter-spacing:.06em}
+.dj-tec-cab .dj-num{font-size:14px; min-width:34px; padding:0 6px}
+.dj-tec-cab .dj-sep{font-size:14px}
+.dj-tec-cab em{font-style:normal; font-size:12px; letter-spacing:.06em}
+
+/* Pie */
+.dj-pie{text-align:center; font-size:12px; letter-spacing:.2em; color:var(--dj-viol); padding-top:2px}
+
+@media (max-width:560px){
+  .dj-g2,.dj-g3{grid-template-columns:1fr}
+  .dj-sub{margin-left:6px}
+}
