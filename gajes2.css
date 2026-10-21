@@ -21,7 +21,7 @@ body{margin:0;background:#000;}
 
 /* Títulos de sección */
 h2.seccion{margin:0;background:var(--negro);border-left:6px solid var(--turquesa);border-bottom:1px solid var(--oro);
-padding:7px 14px; color:var(--oro);font-size:14px;font-weight:normal;letter-spacing:3px;text-transform:uppercase;}
+  padding:7px 14px;color:var(--oro);font-size:14px;font-weight:normal;letter-spacing:3px;text-transform:uppercase;}
 
 /* Tablas base */
 table{width:100%;border-collapse:collapse;}
