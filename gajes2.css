@@ -1,0 +1,75 @@
+/* ===== Ficha: Bamyeou (Zorro Nocturno) ===== */
+:root{
+  --fondo:#14161a; --negro:#0b0c0e; --panel:#1b1e24;
+  --oro:#d9a441; --turquesa:#3fa7a0; --marfil:#ece7d9;
+  --texto:#e9e4d6; --gris:#9a9588; --linea:#2a2d33; --linea-suave:#3a3d44;
+}
+body{margin:0;background:#000;}
+
+/* Contenedor */
+.ficha{max-width:780px;margin:0 auto;background:var(--fondo);border:2px solid var(--oro);
+  font-family:Georgia,'Times New Roman',serif;color:var(--texto);}
+.ficha__franja{height:12px;
+  background:repeating-linear-gradient(135deg,var(--negro) 0,var(--negro) 9px,var(--marfil) 9px,var(--marfil) 18px);}
+.ficha__cuerpo{padding:18px 20px 8px;}
+
+/* Cabecera */
+.cabecera{text-align:center;padding:22px 16px 14px;background:var(--negro);border-bottom:3px double var(--oro);}
+.cabecera__kanji{color:var(--turquesa);font-size:13px;letter-spacing:8px;}
+.cabecera__nombre{color:var(--oro);font-size:30px;letter-spacing:6px;margin:8px 0 4px;text-transform:uppercase;}
+.cabecera__lema{color:var(--gris);font-size:12px;letter-spacing:3px;font-style:italic;}
+
+/* Títulos de sección */
+h2.seccion{margin:0;background:var(--negro);border-left:6px solid var(--turquesa);border-bottom:1px solid var(--oro);
+  padding:7px 14px;color:var(--oro);font-size:14px;font-weight:normal;letter-spacing:3px;text-transform:uppercase;}
+
+/* Tablas base */
+table{width:100%;border-collapse:collapse;}
+td{vertical-align:middle;}
+.tabla{margin:8px 0 22px;}
+.etiqueta{color:var(--turquesa);font-size:12px;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid var(--linea);}
+.valor{color:var(--gris);font-style:italic;border-bottom:1px dotted var(--oro);}
+.tabla td{padding:7px 10px;}
+.valor a{color:var(--gris);font-style:italic;}
+
+/* Armas */
+.armas td{padding:8px;}
+.armas .icono{width:6%;text-align:center;color:var(--oro);font-size:18px;border-bottom:1px solid var(--linea);}
+.armas .nombre-arma{width:26%;}
+
+/* Habilidades y hakis (rejillas con espacio entre celdas) */
+.rejilla{border-collapse:separate;border-spacing:8px;margin:2px 0 14px;}
+.rejilla td{width:50%;}
+.habilidad{padding:9px 12px;background:var(--panel);border:1px solid var(--linea);border-top:2px solid var(--turquesa);
+  color:var(--gris);font-style:italic;}
+.habilidad b{color:var(--oro);font-style:normal;font-weight:normal;}
+
+.haki{vertical-align:top;padding:0;background:var(--panel);border:1px solid var(--linea);}
+.haki__cab{padding:8px 12px;background:var(--negro);border-bottom:2px solid var(--oro);color:var(--oro);
+  letter-spacing:2px;font-size:13px;text-transform:uppercase;}
+.haki__cab span{color:var(--gris);font-style:italic;text-transform:none;letter-spacing:0;}
+.haki__item{padding:7px 12px;border-bottom:1px dotted var(--linea-suave);color:var(--gris);font-style:italic;}
+.haki__item::before{content:"▸ ";color:var(--turquesa);font-style:normal;}
+
+/* Contador */
+.contador{margin:10px 0 22px;padding:12px;background:var(--panel);border:1px solid var(--linea);}
+.contador__total{text-align:center;padding:10px;background:var(--negro);border:2px solid var(--oro);}
+.contador__titulo{color:var(--turquesa);font-size:11px;letter-spacing:4px;text-transform:uppercase;}
+.contador__cifra{color:var(--marfil);font-size:30px;letter-spacing:4px;margin-top:2px;}
+.contador__cifra i,.mini__cifra i,.grupo__cifra i{color:var(--oro);font-style:normal;}
+.contador .rejilla{margin:4px 0 0;}
+.contador .rejilla td{width:33%;}
+.mini{text-align:center;padding:9px;background:var(--negro);border:1px solid var(--turquesa);}
+.mini__titulo{color:var(--turquesa);font-size:11px;letter-spacing:3px;text-transform:uppercase;}
+.mini__cifra{color:var(--marfil);font-size:22px;margin-top:2px;}
+
+/* Grupos de técnicas */
+h3.grupo{margin:12px 0 0;padding:8px 14px;background:linear-gradient(90deg,var(--negro),var(--panel));
+  border-top:2px solid var(--oro);border-bottom:1px solid var(--linea);
+  color:var(--oro);font-size:15px;font-weight:normal;letter-spacing:3px;text-transform:uppercase;}
+.grupo__cifra{float:right;color:var(--marfil);letter-spacing:2px;border:1px solid var(--turquesa);padding:0 10px;background:var(--negro);}
+
+/* Ficha de técnica */
+.tecnica{margin:0 0 14px;background:var(--panel);}
+.tecnica td{padding:6px 12px;}
+.tecnica .etiqueta{width:24%;font-size:11px;}
