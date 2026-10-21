@@ -29,7 +29,7 @@ td{vertical-align:middle;}
 .tabla{margin:8px 0 22px;}
 .etiqueta{color:var(--turquesa);font-size:12px;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid var(--linea);}
 .valor{color:var(--gris);font-style:italic;border-bottom:1px dotted var(--oro);}
-.tabla td{padding:0px 10px;}
+//.tabla td{padding:7px 10px;}
 .valor a{color:var(--gris);font-style:italic;}
 
 /* Armas */
